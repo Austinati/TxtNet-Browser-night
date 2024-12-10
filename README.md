@@ -1,6 +1,6 @@
 # TxtNet Browser
 ### Browse the Web over SMS, no WiFi or Mobile Data required!
-<p align="center"><img src="https://github.com/lukeaschenbrenner/TxtNet-Browser/raw/master/app/src/main/ic_launcher-playstore.png" alt="App Icon" width="200"/></p>  
+<p align="center"><img src="/raw/master/app/src/main/ic_launcher-playstore.png" alt="App Icon" width="200"/></p>  
 
 > **⏸️ Development of this project is currently on hiatus due to other ongoing commitments. However, fixes and improvements are planned when development continues in Q1 2024! ⏸️**
 
@@ -48,7 +48,7 @@ For Android 4.4-6.0, you will need to run adb commands one time as specified in 
 3. Sign up for an [ngrok](http://ngrok.com/) account and download the ngrok application  
 4. Open the ngrok directory and run this command: `./ngrok tcp 5000`  
 5. Visit the [active numbers](https://console.twilio.com/US1/develop/phone-numbers/manage/incoming) page and add the ngrok url to the "A Message Comes In" section after selecting "webhook". For example: "https://xyz.ngrok.io/receive_sms"  
-6. Download the TxtNet Browser [server script](https://github.com/lukeaschenbrenner/TxtNet-Browser/blob/master/SMS_Server_Twilio.py) and install all the required modules using "pip install x"  
+6. Download the TxtNet Browser [server script](/blob/master/SMS_Server_Twilio.py) and install all the required modules using "pip install x"  
 7. Add your Twilio API ID and Key into your environment variables, and run the script! `python3 ./SMS_Server_Twilio.py`  
 8. In the TxtNet Browser app, press the three dots and press "Change Server Phone Number". Enter in the phone number you purchased from Twilio and press OK!  
 </strike>  
@@ -59,20 +59,20 @@ Bugs:
 - Many carriers are unnecessarily rate limiting incoming text messages, so a page may look as though it "stalled" while loading on large pages. As of now the only way to fix this is to wait!
 - In congested networks, it's possible for a mobile carrier to drop one or more SMS messages before they are recieved by the client. Currently, the app has no logic to mitigate this issue, so any websites that have stalled for a significant amount of time should be requested again.
 - In Android 12 (or possibly a new version of Google Messages?), there is a new and "improved" messages blocking feature. This results in no SMS messages getting through when a number is blocked, which makes the blocking feature of TxtNet Browser break the app! Instead of blocking messages, to get around this "feature", you can silent message notifications from the server phone number.  
-  <img src="https://github.com/lukeaschenbrenner/TxtNet-Browser/raw/master/media/silentMessages.png" alt="Silence Number" width="200"/>
-  <img src="https://github.com/lukeaschenbrenner/TxtNet-Browser/raw/master/media/Messages_Migrating_Popup.png" alt="Contacts Popup" width="200"/>  
-  <img src="https://github.com/lukeaschenbrenner/TxtNet-Browser/raw/master/media/MigratingBlockedContacts.png" alt="Migrating Contacts" width="200"/>  
+  <img src="/raw/master/media/silentMessages.png" alt="Silence Number" width="200"/>
+  <img src="/raw/master/media/Messages_Migrating_Popup.png" alt="Contacts Popup" width="200"/>  
+  <img src="/raw/master/media/MigratingBlockedContacts.png" alt="Migrating Contacts" width="200"/>  
 
 ## Screenshots (TxtNet 1.0)
 
 <table>  
   <tr>  
-    <td> <img src="https://github.com/lukeaschenbrenner/TxtNet-Browser/raw/master/media/screenshot1.png"  alt="1" height = 640px ></td>  
-    <td><img src="https://github.com/lukeaschenbrenner/TxtNet-Browser/raw/master/media/screenshot2.png" alt="2" height = 640px></td>  
+    <td> <img src="/raw/master/media/screenshot1.png"  alt="1" height = 640px ></td>  
+    <td><img src="/raw/master/media/screenshot2.png" alt="2" height = 640px></td>  
    </tr>   
    <tr>  
-      <td><img src="https://github.com/lukeaschenbrenner/TxtNet-Browser/raw/master/media/screenshot3.png" alt="3" height = 640px></td>  
-      <td><img src="https://github.com/lukeaschenbrenner/TxtNet-Browser/raw/master/media/screenshot4.png" align="right" alt="4" height = 640px>  
+      <td><img src="/raw/master/media/screenshot3.png" alt="3" height = 640px></td>  
+      <td><img src="/raw/master/media/screenshot4.png" align="right" alt="4" height = 640px>  
   </td>  
   </tr>  
 </table>
